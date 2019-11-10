@@ -7,9 +7,15 @@ export default function Header({ isLogged }) {
   return (
     <Container>
       <Logo>
-        <strong>{!isLogged ? 'HOME' : ''}</strong>
+        <strong>{!isLogged ? 'HOME' : 'DASHBOARD'}</strong>
       </Logo>
-      <Button to="/login">Acessar</Button>
+      {!isLogged ? (
+        <Button to="/login">Acessar</Button>
+      ) : (
+        <Button to="/" logout>
+          Sair
+        </Button>
+      )}
     </Container>
   );
 }

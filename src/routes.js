@@ -3,14 +3,18 @@ import { Switch, Route } from 'react-router-dom';
 
 import Landing from './pages/Landing';
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+import Welcome from './pages/Welcome';
+import LoanHome from './pages/LoanHome';
+import InvestHome from './pages/InvestHome';
 
 export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route path="/login" component={Login} />
-      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/loans/home" component={LoanHome} />
+      <Route path="/invest/home" component={InvestHome} />
+      <Route path="/welcome" component={Welcome} />
     </Switch>
   );
 }

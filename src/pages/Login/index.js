@@ -8,7 +8,7 @@ import history from '~/services/history';
 export default function Login() {
   function handleSubmit(e) {
     e.preventDefault();
-    history.push('/dashboard');
+    history.push('/welcome');
   }
 
   return (

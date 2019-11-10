@@ -20,7 +20,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  animation: ${entrance} 2s;
+  animation: ${entrance} 1s;
 `;
 
 export const ImageWrapper = styled.img`
