@@ -19,6 +19,86 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+export const Loan = styled.div`
+  animation: ${entrance} 1s;
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  max-width: 1500px;
+  background: #fff;
+  border-radius: 12px;
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  strong {
+    color: #7159c1;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  div {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #7159c1;
+    border-radius: 12px;
+    height: 800px;
+    width: 800px;
+    background: #fff;
+    h3 {
+      color: #7159c1;
+      font-size: 22px;
+      margin-right: 30px;
+    }
+
+    button.accept {
+      margin-right: 10px;
+      height: 60px;
+      width: 200px;
+      background: #fff;
+      font-weight: bold;
+      color: #7159c1;
+      border: 1px solid #7159c1;
+      border-radius: 8px;
+      font-size: 22px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    button.refuse {
+      margin-left: 10px;
+      height: 60px;
+      width: 200px;
+      background: #fff;
+      font-weight: bold;
+      color: #7159c1;
+      border: 1px solid #7159c1;
+      border-radius: 8px;
+      font-size: 22px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  div.buttons {
+    margin-top: 0;
+    border: none;
+  }
+`;
+
 export const Main = styled.div`
   animation: ${entrance} 1s;
   height: 100%;
@@ -160,6 +240,7 @@ export const Instalments = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   svg {
     margin-top: 20px;
@@ -174,5 +255,30 @@ export const Instalments = styled.div`
     margin-top: 20px;
     border-bottom: 2px solid #7159c1;
     padding-bottom: 15px;
+  }
+
+  div {
+    margin-top: 25px;
+    ul {
+      border: 1px solid #7159c1;
+      border-radius: 8px;
+      padding: 20px 0;
+      width: 400px;
+      margin-bottom: 20px;
+
+      display: flex;
+      flex-direction: column;
+
+      li {
+        list-style: none;
+        font-weight: bold;
+        color: #7159c1;
+        font-size: 22px;
+        margin: 0 0 10px;
+        border-bottom: 2px solid #7159c1;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+    }
   }
 `;

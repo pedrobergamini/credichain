@@ -5,7 +5,6 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Welcome from './pages/Welcome';
 import LoanHome from './pages/LoanHome';
-import InvestHome from './pages/InvestHome';
 
 export default function Routes() {
   return (
@@ -13,7 +12,6 @@ export default function Routes() {
       <Route exact path="/" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/loans/home" component={LoanHome} />
-      <Route path="/invest/home" component={InvestHome} />
       <Route path="/welcome" component={Welcome} />
     </Switch>
   );

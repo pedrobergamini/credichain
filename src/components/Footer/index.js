@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <Container>
       <strong>
-        Made with <FaHeart color="red" size={20} /> by CredChain team
+        Made with <FaHeart color="red" size={20} /> by CrediChain team
       </strong>
     </Container>
   );
